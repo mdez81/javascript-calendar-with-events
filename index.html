@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar with events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calPeriod">
+        <input id="calBack" type="button" value="&lt;">
+        <select id="calMonth"></select>
+        <input type="number" id="calYear">
+        <input id="calNext" type="button" value="&gt;">
+    </div>
+    
+    <div id="calWrap"></div>
+    
+    <dialog id="calForm">
+        <form method="dialog">
+            <div id="evtClose">X</div>
+            <h2>Calendar event</h2>
+            <label>Date</label>
+            <input type="text" id="evtDate" readonly>
+            <label>Details</label>
+            <textarea  id="evtTxt" required></textarea>
+            <input id="evtDel" type="button" value="delete">
+            <input id="evtSave" type="submit" value="save">
+        </form>
+    </dialog>
+    
+    <script src="calendar.js"></script>
+</body>
+</html>

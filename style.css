@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#calPeriod{
+    background-color: aqua;
+    border: 1px solid red;
+}
+.calHead, .calRow{
+    display: flex;
+}
+.calCell{
+    width: 14.2857%;
+}
